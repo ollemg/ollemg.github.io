@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang=pt>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Como instalar o FOG em poucos comandos, para quem não conhece o FOG segue o link. Mão na massaBaixar o Fog1$ wget -O fogproject-1.5.6.tar.gz https://github.com/FOGProject/fogproject/archive/1.5.6.tar.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Instalando FOG">
+<meta property="og:url" content="http://ollemg.github.io/Instalando-FOG/index.html">
+<meta property="og:site_name" content="Meu blog pessoal!">
+<meta property="og:description" content="Como instalar o FOG em poucos comandos, para quem não conhece o FOG segue o link. Mão na massaBaixar o Fog1$ wget -O fogproject-1.5.6.tar.gz https://github.com/FOGProject/fogproject/archive/1.5.6.tar.">
+<meta property="og:locale" content="pt-br">
+<meta property="og:updated_time" content="2019-06-17T01:24:59.660Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Instalando FOG">
+<meta name="twitter:description" content="Como instalar o FOG em poucos comandos, para quem não conhece o FOG segue o link. Mão na massaBaixar o Fog1$ wget -O fogproject-1.5.6.tar.gz https://github.com/FOGProject/fogproject/archive/1.5.6.tar.">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Instalando FOG</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Início</a></li>
+         
+          <li><a href="/about/">Sobre</a></li>
+         
+          <li><a href="/archives/">Artigos</a></li>
+         
+          <li><a href="http://github.com/ollemg">Projetos</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/Segunda-publicacao/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Post Anterior</span>
+      <span id="i-next" class="info" style="display:none;">Post Seguinte</span>
+      <span id="i-top" class="info" style="display:none;">Acima</span>
+      <span id="i-share" class="info" style="display:none;">Compartihar Post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://ollemg.github.io/Instalando-FOG/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://ollemg.github.io/Instalando-FOG/&text=Instalando FOG"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://ollemg.github.io/Instalando-FOG/&is_video=false&description=Instalando FOG"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Instalando FOG&body=Check out this article: http://ollemg.github.io/Instalando-FOG/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://ollemg.github.io/Instalando-FOG/&name=Instalando FOG&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mao-na-massa"><span class="toc-number">1.</span> <span class="toc-text">Mão na massa</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Baixar-o-Fog"><span class="toc-number">2.</span> <span class="toc-text">Baixar o Fog</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Descompactar-os-arquivos"><span class="toc-number">3.</span> <span class="toc-text">Descompactar os arquivos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Instalando-em-1-comando"><span class="toc-number">4.</span> <span class="toc-text">Instalando em 1 comando</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Instalando FOG
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Meu blog pessoal!</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-06-17T01:09:26.000Z" itemprop="datePublished">Jun 16, 2019</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Como instalar o FOG em poucos comandos, para quem não conhece o <a href="https://fogproject.org" target="_blank" rel="noopener">FOG</a> segue o link.</p>
+<h3 id="Mao-na-massa"><a href="#Mao-na-massa" class="headerlink" title="Mão na massa"></a>Mão na massa</h3><h3 id="Baixar-o-Fog"><a href="#Baixar-o-Fog" class="headerlink" title="Baixar o Fog"></a>Baixar o Fog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget -O fogproject-1.5.6.tar.gz https://github.com/FOGProject/fogproject/archive/1.5.6.tar.gz</span><br></pre></td></tr></table></figure>
+
+<h3 id="Descompactar-os-arquivos"><a href="#Descompactar-os-arquivos" class="headerlink" title="Descompactar os arquivos"></a>Descompactar os arquivos</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ tar -xzvf fogproject-1.5.6.tar.gz</span><br></pre></td></tr></table></figure>
+
+<h3 id="Instalando-em-1-comando"><a href="#Instalando-em-1-comando" class="headerlink" title="Instalando em 1 comando"></a>Instalando em 1 comando</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> fogproject-1.5.6/bin ; sh -c <span class="string">'/bin/echo -e "\n\n\n\n\n\n\n\n\n\n\n\n\n" | /bin/bash installfog.sh'</span> \</span><br></pre></td></tr></table></figure>
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Por favor, ative o JavaScript para visualizar o conteúdo.</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Início</a></li>
+         
+          <li><a href="/about/">Sobre</a></li>
+         
+          <li><a href="/archives/">Artigos</a></li>
+         
+          <li><a href="http://github.com/ollemg">Projetos</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mao-na-massa"><span class="toc-number">1.</span> <span class="toc-text">Mão na massa</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Baixar-o-Fog"><span class="toc-number">2.</span> <span class="toc-text">Baixar o Fog</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Descompactar-os-arquivos"><span class="toc-number">3.</span> <span class="toc-text">Descompactar os arquivos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Instalando-em-1-comando"><span class="toc-number">4.</span> <span class="toc-text">Instalando em 1 comando</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://ollemg.github.io/Instalando-FOG/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://ollemg.github.io/Instalando-FOG/&text=Instalando FOG"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://ollemg.github.io/Instalando-FOG/&is_video=false&description=Instalando FOG"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Instalando FOG&body=Check out this article: http://ollemg.github.io/Instalando-FOG/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://ollemg.github.io/Instalando-FOG/&title=Instalando FOG"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://ollemg.github.io/Instalando-FOG/&name=Instalando FOG&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Compartilhar</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 Gabriel de Mello Barbosa
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Início</a></li>
+         
+          <li><a href="/about/">Sobre</a></li>
+         
+          <li><a href="/archives/">Artigos</a></li>
+         
+          <li><a href="http://github.com/ollemg">Projetos</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+    <!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-72497489-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'ollemg';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+
+</body>
+</html>
